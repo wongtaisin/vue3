@@ -1,0 +1,61 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: #f5f5f5;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+$dark-shadow-color: rgba(255, 255, 255, 0.15); // 统一暗色主题阴影变量
+
+@mixin dark {
+	background: #222 !important;
+}
+
+@mixin dark-right-shadow {
+	box-shadow: 2px 2px 8px $dark-shadow-color !important;
+}
+
+@mixin dark-bottom-shadow {
+	box-shadow: 2px 2px 8px $dark-shadow-color !important;
+}
+
+html.dark {
+	body {
+		@include dark;
+	}
+
+	.common-header {
+		@include dark;
+		@include dark-bottom-shadow;
+	}
+
+	.el-aside {
+		@include dark-right-shadow;
+	}
+
+	.common-aside {
+		@include dark;
+		@include dark-right-shadow;
+	}
+
+	.el-menu,
+	.el-menu .el-sub-menu.is-active > .el-sub-menu__title {
+		@include dark;
+	}
+}

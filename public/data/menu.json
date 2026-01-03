@@ -1,0 +1,77 @@
+[
+	{
+		"menuId": "001",
+		"name": "计价下单",
+		"path": "/pcba/valuation",
+		"menuType": 0,
+		"meta": { "title": "计价下单" },
+		"icon": "icon-dingdanliebiao"
+	},
+	{
+		"menuId": "002",
+		"name": "订单管理",
+		"path": "/order",
+		"menuType": 0,
+		"meta": { "title": "订单管理" },
+		"sort": 1,
+		"icon": "icon-caogao1",
+		"children": [
+			{
+				"menuId": "002001",
+				"name": "订单列表",
+				"path": "/order/list",
+				"menuType": 0,
+				"meta": { "title": "订单列表" },
+				"sort": 1,
+				"icon": "icon-dingdanliebiao"
+			},
+			{
+				"menuId": "002002",
+				"name": "订单草稿箱",
+				"path": "/order/draft",
+				"menuType": 0,
+				"meta": { "title": "订单草稿箱" },
+				"sort": 1,
+				"icon": "icon-caogao1"
+			}
+		]
+	},
+	{
+		"menuId": "003001",
+		"name": "空列表",
+		"path": "/kong/order",
+		"menuType": 0,
+		"meta": { "title": "空列表" },
+		"sort": 1,
+		"icon": "icon-dingdanliebiao"
+	},
+	{
+		"menuId": "004",
+		"name": "three",
+		"path": "/three/list",
+		"menuType": 0,
+		"meta": { "title": "three" },
+		"sort": 1,
+		"icon": "icon-caogao1",
+		"children": [
+			{
+				"menuId": "004001",
+				"name": "three列表",
+				"path": "/three/list",
+				"menuType": 0,
+				"meta": { "title": "three列表" },
+				"sort": 1,
+				"icon": "icon-dingdanliebiao"
+			},
+			{
+				"menuId": "004002",
+				"name": "three工厂",
+				"path": "/three/factory",
+				"menuType": 0,
+				"meta": { "title": "three工厂" },
+				"sort": 1,
+				"icon": "icon-caogao1"
+			}
+		]
+	}
+]

@@ -1,1 +1,1 @@
-# vue3
+# Vue 3 + TypeScript + Vite + pinia + axios + vue router + element-plus
