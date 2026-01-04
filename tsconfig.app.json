@@ -1,24 +1,37 @@
 {
-	"compilerOptions": {
-		"composite": true,
-		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-		"target": "ES2020",
-		"module": "ESNext",
-		"lib": ["ES2020", "DOM", "DOM.Iterable"],
-		"skipLibCheck": true,
-		"types": ["vite/client"],
-		"moduleResolution": "Bundler",
-		"isolatedModules": true,
-		"jsx": "preserve",
-		"strict": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true
-	},
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.tsx",
-		"src/**/*.vue",
-		"src/vuex/store.js",
-		"atuo-import.d.ts"
-	]
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "preserve", // 生成JSX代码的方式
+    "jsxImportSource": "vue", // 指定JSX转换为Vue组件的来源
+    "jsxFactory": "h", // 指定JSX转换为Vue组件的工厂函数
+    "jsxFragmentFactory": "Fragment", // 指定JSX转换为Vue组件的片
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "allowUnreachableCode": false
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules"]
 }

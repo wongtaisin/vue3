@@ -3,7 +3,7 @@
  * @Date: 2025-04-03 14:16:34
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-08-21 11:26:02
- * @FilePath: \project\src\pinia\token.ts
+ * @FilePath: \vue3\src\pinia\token.ts
  * @Description: 用于管理 token 的 Pinia store，支持持久化存储
  *
  * Copyright (c) 2025 wongtaisin1024@gmail.com, All Rights Reserved.

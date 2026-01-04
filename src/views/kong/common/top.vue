@@ -1,9 +1,9 @@
 <!--
  * @Author: wingddd wongtaisin1024@gmial.com
  * @Date: 2024-11-15 13:46:29
- * @LastEditors: wingddd wongtaisin1024@gmial.com
- * @LastEditTime: 2024-11-16 15:49:56
- * @FilePath: \project\src\views\list\common\top.vue
+ * @LastEditors: wingddd wongtaisin1024@gmail.com
+ * @LastEditTime: 2026-01-04 16:04:37
+ * @FilePath: \vue3\src\views\kong\common\top.vue
  * @Description:
  *
  * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved.
@@ -46,8 +46,9 @@
       font-weight: 700;
     }
   }
-  :deep(.el-menu--horizontal.el-menu) {
-    border-bottom: 0;
-  }
+}
+
+:deep(.el-menu--horizontal.el-menu) {
+  border-bottom: 0;
 }
 </style>

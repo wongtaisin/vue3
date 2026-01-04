@@ -3,7 +3,7 @@
  * @Date: 2025-07-18 11:10:40
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-07-18 11:24:55
- * @FilePath: \project\src\views\aside\dark.vue
+ * @FilePath: \vue3\src\views\aside\dark.vue
  * @Description:
  *
  * Copyright (c) 2025 by wongtaisin1024@gmail.com, All Rights Reserved.

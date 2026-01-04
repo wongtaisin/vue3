@@ -3,7 +3,7 @@
  * @Date: 2024-11-23 08:34:49
  * @LastEditors: wingddd wongtaisin1024@gmial.com
  * @LastEditTime: 2024-11-23 08:35:33
- * @FilePath: \project\src\axios\login.ts
+ * @FilePath: \vue3\src\axios\login.ts
  * @Description:
  *
  * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved.

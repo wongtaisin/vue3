@@ -2,8 +2,8 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2024-11-26 14:50:23
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2024-12-09 18:15:18
- * @FilePath: \project\src\components\common\pagination.vue
+ * @LastEditTime: 2026-01-04 16:12:22
+ * @FilePath: \vue3\src\components\common\pagination.vue
  * @Description:
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.
@@ -82,13 +82,19 @@ defineExpose({ reset }) // 导出 reset 方法
   overflow: hidden;
   width: 100%;
   min-height: 30px;
+}
 
-  :deep(.el-pagination .el-select .el-input .el-input__inner) {
-    height: 28px;
-  }
+:deep(.el-pagination) {
+  .el-select {
+    .el-input {
+      .el-input__inner {
+        height: 28px;
+      }
 
-  :deep(.el-select .el-input .el-select__caret) {
-    line-height: 16px;
+      .el-select__caret {
+        line-height: 16px;
+      }
+    }
   }
 }
 </style>

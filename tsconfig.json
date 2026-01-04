@@ -9,38 +9,14 @@
   "exclude": [
     "./src/hello/**/*" // src下hello目录下的文件都不会被编译
   ],
+  // 编译选项
   "compilerOptions": {
-    "target": "ES2022",
-    "useDefineForClassFields": true,
-    "module": "esnext", // 解决无法使用 import.meta
-    "types": ["vite/client"], // 解决 .glob 报错，添加客户端代码环境
-    "moduleResolution": "node",
-    "removeComments": true, // 是否删除注释
-    "noEmit": false, // 默认值：false 不对代码进行编译
-    "strict": true, // 启用所有的严格检查，默认值为true，设置后相当于开启了所有的严格检查
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
-    "skipLibCheck": true,
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "forceConsistentCasingInFileNames": false, // 强制文件名一致性检查，默认值：false，设置为true后，文件名不一致时会报错
-    "baseUrl": "./", // 设置路径别名的基础目录，默认值：./，设置后可以使用路径别名
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "jsx": "preserve",
     "jsxImportSource": "vue"
   },
-  // 定义希望被编译文件所在的目录
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "src/types/auto-imports.d.ts",
-    "src/types/auto-components.d.ts"
-  ],
+
   "references": [
     {
       "path": "./tsconfig.app.json"

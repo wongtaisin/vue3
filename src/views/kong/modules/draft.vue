@@ -2,7 +2,7 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2024-11-15 13:46:29
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2026-01-03 16:51:17
+ * @LastEditTime: 2026-01-04 16:39:50
  * @FilePath: \vue3\src\views\kong\modules\draft.vue
  * @Description: 草稿列表页面
  *
@@ -183,7 +183,8 @@ const draftListLoad = () => {
 }
 
 // 文件下载
-const handleFileDownload = (obj: any) => {
+const handleFileDownload = (item: any) => {
+  window.open(item.fileAddress)
   ElMessage.success('文件下载成功')
 }
 

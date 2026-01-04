@@ -3,7 +3,7 @@
  * @Date: 2024-12-10 11:20:06
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-07-18 13:48:46
- * @FilePath: \project\src\views\aside\LeftMenuItem.vue
+ * @FilePath: \vue3\src\views\aside\LeftMenuItem.vue
  * @Description: 左侧菜单项组件
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

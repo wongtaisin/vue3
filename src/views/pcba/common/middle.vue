@@ -2,8 +2,8 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2024-11-13 9:02:55
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2025-08-21 15:45:53
- * @FilePath: \project\src\views\pcba\common\middle.vue
+ * @LastEditTime: 2026-01-04 16:29:52
+ * @FilePath: \vue3\src\views\pcba\common\middle.vue
  * @Description: middle
  *
  * Copyright (c) 2025 by wongtaisin1024@gmail.com, All Rights Reserved.
@@ -333,7 +333,7 @@
 </template>
 
 <script lang="ts" setup>
-import { FormInstance, FormRules } from 'element-plus'
+import { FormRules } from 'element-plus'
 import { reactive, ref } from 'vue'
 import FileUpload from './fileUpload.vue'
 
@@ -410,7 +410,6 @@ const formInline = reactive<RuleForm>({
   xRaySingle: 0,
   xRayComponent: 0
 })
-const ruleFormRef = ref<FormInstance>()
 const rules = reactive<FormRules<RuleForm>>({
   isPlugIn: [{ required: true, message: '请选择是否有插件', trigger: 'change' }]
 })

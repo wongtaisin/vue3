@@ -3,7 +3,7 @@
  * @Date: 2025-04-03 14:16:34
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-07-18 13:50:13
- * @FilePath: \project\src\pinia\tabs.ts
+ * @FilePath: \vue3\src\pinia\tabs.ts
  * @Description: 用于管理标签页的 Pinia store，支持持久化存储
  *
  * Copyright (c) 2025 by wongtaisin1024@gmail.com, All Rights Reserved.

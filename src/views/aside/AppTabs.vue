@@ -91,15 +91,15 @@ const handleCloseTabLeft = (name: unknown) => {
   const index = tabsStore.getTabs.findIndex((obj: { name: unknown }) => obj.name === name)
   const newArr = tabsStore.getTabs.splice(0, index)
   tabsStore.copyTabs(tabsStore.getTabs)
+  console.log(index, newArr, `关闭当前tabs标签左侧的标签`)
 }
 
 // 关闭当前tabs标签右侧的标签
 const handleCloseTabRight = (name: unknown) => {
   const arr = tabsStore.getTabs
   const index = arr.findIndex((obj: { name: unknown }) => obj.name === name)
-  let newArr = []
   if (arr.length - index > 0) {
-    newArr = arr.splice(index + 1, arr.length - index)
+    arr.splice(index + 1, arr.length - index)
   }
   tabsStore.copyTabs(arr)
 }
@@ -110,11 +110,14 @@ const handleCloseTabOther = (name: unknown) => {
   const index = arr.findIndex((obj: { name: unknown }) => obj.name === name)
   const newArr = arr.filter((obj: { name: unknown }) => obj.name === name)
 
+  console.log(index, newArr, `关闭当前tabs标签以外的标签`)
+
   tabsStore.copyTabs(newArr)
 }
 
 // 关闭当前tabs标签右侧的标签
 const handleCloseTabCloseAll = (name: unknown) => {
+  console.log(name)
   tabsStore.copyTabs([])
   router.push('/')
 }

@@ -180,6 +180,8 @@ const handleLogin = async () => {
       uuid: params.uuid
     }
 
+    console.log(ot)
+
     // TODO: 调用登录接口
     const res = {
       token: '123456',

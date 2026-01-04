@@ -3,7 +3,7 @@
  * @Date: 2024-11-14 15:02:55
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-08-21 15:15:50
- * @FilePath: \project\src\views\pcba\common\fileUpload.vue
+ * @FilePath: \vue3\src\views\pcba\common\fileUpload.vue
  * @Description: 文件上传
  *
  * Copyright (c) 2025 by wongtaisin1024@gmail.com, All Rights Reserved.

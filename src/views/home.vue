@@ -50,9 +50,7 @@ const keepAliveStore = useKeepAliveStore()
 </script>
 
 <style lang="scss" scoped>
-:deep {
-  .el-header {
-    padding: 0;
-  }
+:deep(.el-header) {
+  padding: 0;
 }
 </style>

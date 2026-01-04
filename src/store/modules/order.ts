@@ -3,7 +3,7 @@
  * @Date: 2024-11-22 15:44:36
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2024-12-16 15:53:24
- * @FilePath: \project\src\pinia\modules\order.ts
+ * @FilePath: \vue3\src\pinia\modules\order.ts
  * @Description:
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

@@ -3,7 +3,7 @@
  * @Date: 2024-11-15 13:46:29
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2024-12-10 11:48:58
- * @FilePath: \project\src\views\pcbaList\modules\draft.vue
+ * @FilePath: \vue3\src\views\pcbaList\modules\draft.vue
  * @Description: 草稿列表页面
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.
@@ -183,7 +183,8 @@ const draftListLoad = () => {
 }
 
 // 文件下载
-const handleFileDownload = (obj: any) => {
+const handleFileDownload = (item: any) => {
+  window.open(item.address)
   ElMessage.success('文件下载成功')
 }
 

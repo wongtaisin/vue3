@@ -3,7 +3,7 @@
  * @Date: 2024-11-13 08:05:37
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2024-12-16 14:30:02
- * @FilePath: \project\src\router\index.ts
+ * @FilePath: \vue3\src\router\index.ts
  * @Description:
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

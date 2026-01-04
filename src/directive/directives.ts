@@ -3,7 +3,7 @@
  * @Date: 2024-12-11 10:52:23
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-08-29 09:51:45
- * @FilePath: \project\src\directive\directives.ts
+ * @FilePath: \vue3\src\directive\directives.ts
  * @Description: 自定义指令集合
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

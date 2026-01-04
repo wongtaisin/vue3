@@ -2,8 +2,8 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2024-12-16 14:41:09
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2024-12-16 15:04:38
- * @FilePath: \project\src\components\computeCode.vue
+ * @LastEditTime: 2026-01-04 16:49:21
+ * @FilePath: \vue3\src\components\computeCode.vue
  * @Description:
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

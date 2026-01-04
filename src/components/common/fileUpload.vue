@@ -3,7 +3,7 @@
  * @Date: 2024-11-14 15:02:55
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2024-11-26 15:15:09
- * @FilePath: \project\src\components\common\fileUpload.vue
+ * @FilePath: \vue3\src\components\common\fileUpload.vue
  * @Description: 文件上传组件
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

@@ -3,7 +3,7 @@
  * @Date: 2024-11-21 09:59:35
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-08-29 09:50:21
- * @FilePath: \project\src\utils\index.ts
+ * @FilePath: \vue3\src\utils\index.ts
  * @Description: 工具函数和指令注册
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

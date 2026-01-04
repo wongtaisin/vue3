@@ -2,7 +2,7 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2024-11-15 13:46:29
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2026-01-03 16:53:00
+ * @LastEditTime: 2026-01-04 16:18:47
  * @FilePath: \vue3\src\views\pcba\common\top.vue
  * @Description: PCB在线下单平台顶部导航组件
  *
@@ -101,10 +101,6 @@ const handleSearch = () => {
     }
   }
 
-  :deep(.el-menu--horizontal.el-menu) {
-    border-bottom: 0;
-  }
-
   .backstage {
     margin-left: 30px;
     cursor: pointer;
@@ -115,11 +111,17 @@ const handleSearch = () => {
       color: var(--el-color-primary-light-3);
     }
   }
+}
 
-  :deep(.input-with-select) {
-    .el-input__wrapper {
-      border-radius: 4px;
-    }
+/* 覆盖 Element Plus 水平菜单 */
+:deep(.el-menu--horizontal.el-menu) {
+  border-bottom: 0;
+}
+
+/* 覆盖你自定义容器内的 ElInput 内部样式 */
+.input-with-select {
+  :deep(.el-input__wrapper) {
+    border-radius: 4px;
   }
 }
 </style>

@@ -67,7 +67,7 @@ const rules = reactive({
   ]
 })
 
-const init = (userId: any) => {
+const init = () => {
   // 呼出对话框
   dialogFormVisible.value = true
   // userId
@@ -75,19 +75,22 @@ const init = (userId: any) => {
 }
 
 const onSubmit = () => {
-  ruleFormRef.value.validate((valid: any) => {
-    if (valid) {
-      // TODO
-      // 调用修改密码接口
-      ElMessage.success('密码修改成功')
-      dialogFormVisible.value = false
+  return new Promise((resolve, reject) => {
+    ruleFormRef.value.validate((valid: any) => {
+      if (valid) {
+        // TODO
+        // 调用修改密码接口
+        ElMessage.success('密码修改成功')
+        dialogFormVisible.value = false
 
-      // 登录成功，跳转到管理首页
-      // console.log('Submit')
-    } else {
-      console.log('Error submit')
-      return false
-    }
+        // 登录成功，跳转到管理首页
+        // console.log('Submit')
+        resolve(true)
+      } else {
+        console.log('Error submit')
+        reject(false)
+      }
+    })
   })
 }
 

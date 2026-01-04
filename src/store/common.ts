@@ -3,7 +3,7 @@
  * @Date: 2024-11-21 09:59:35
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2024-12-09 16:32:25
- * @FilePath: \project\src\pinia\common.ts
+ * @FilePath: \vue3\src\pinia\common.ts
  * @Description:
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

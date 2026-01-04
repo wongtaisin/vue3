@@ -2,8 +2,8 @@
  * @Author: wingddd wongtaisin1024@gmial.com
  * @Date: 2024-11-13 9:02:55
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2025-08-21 15:44:52
- * @FilePath: \project\src\views\pcba\common\right.vue
+ * @LastEditTime: 2026-01-04 16:17:51
+ * @FilePath: \vue3\src\views\pcba\common\right.vue
  * @Description: right
  *
  * Copyright (c) 2025 by wongtaisin1024@gmail.com, All Rights Reserved.
@@ -202,10 +202,12 @@ const selectClick = (selection: any, row: any) => {
   }
 }
 
-:deep(.left-label) {
+/* 自定义类，无需 :deep */
+.left-label {
   width: 110px;
 }
 
+/* 穡透 Element Plus 组件 */
 :deep(.el-collapse-item) {
   background: white;
   padding: 20px 20px 0.1px 20px;
@@ -214,17 +216,17 @@ const selectClick = (selection: any, row: any) => {
   &:last-child {
     margin-bottom: 0;
   }
+
+  .el-collapse-item__header {
+    background: #f5f7f9;
+    padding: 0 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-top: none;
+  }
 }
 
-:deep(.el-collapse-item__header) {
-  background: #f5f7f9;
-  padding: 0 10px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  border-top: none;
-}
-
-// 隐藏全选按钮
+/* 表格：隐藏全选按钮 */
 :deep(.el-table th.el-table__cell:nth-child(1) .cell) {
   visibility: hidden;
 }

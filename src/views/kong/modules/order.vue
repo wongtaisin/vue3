@@ -2,7 +2,7 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2024-11-15 13:46:29
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2026-01-03 16:51:26
+ * @LastEditTime: 2026-01-04 16:40:03
  * @FilePath: \vue3\src\views\kong\modules\order.vue
  * @Description: 订单列表页面
  *
@@ -78,7 +78,7 @@
         <template #default="scope">
           <el-button type="danger" v-if="scope.row.orderStatus == 0">待审核</el-button>
           <el-button
-            @click="handleOrderConfirm(scope.row)"
+            @click="handleOrderConfirm"
             type="primary"
             v-if="scope.row.orderStatus == 1"
             >确认下单</el-button
@@ -241,7 +241,7 @@ const handleOrderDetail = (order: any) => {
 }
 
 // 确认下单
-const handleOrderConfirm = async (order: any) => {
+const handleOrderConfirm = async () => {
   ElMessage.success('下单成功')
   orderListLoad()
 }

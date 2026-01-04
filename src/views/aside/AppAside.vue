@@ -82,6 +82,7 @@ getMenu()
   color: #fff;
   border-right: none;
 
+  // 所有子项样式都写在这里，天然限定在 .el-menu 内部
   .el-sub-menu {
     &.is-active {
       > .el-sub-menu__title {
@@ -89,32 +90,36 @@ getMenu()
         background-color: #001529 !important;
       }
     }
-  }
 
-  .el-menu-item.is-active {
-    background: #247bb4;
-    color: #f1d070;
-  }
-
-  &.el-menu--collapse {
-    width: 60px;
-    & h1 {
-      display: none;
+    // 把 .el-sub-menu__title 的 hover 放进来
+    .el-sub-menu__title {
+      color: #fff;
+      &:hover {
+        background: #247bb4;
+      }
     }
   }
-}
 
-:deep(.el-menu-item) {
-  color: #fff;
-  &:hover {
-    background: rgba(26, 37, 47, 1);
+  // 把 .el-menu-item 相关样式全部放进来
+  .el-menu-item {
+    color: #fff;
+
+    &.is-active {
+      background: #247bb4;
+      color: #f1d070;
+    }
+
+    &:hover {
+      background: rgba(26, 37, 47, 1);
+    }
   }
-}
 
-:deep(.el-sub-menu__title) {
-  color: #fff;
-  &:hover {
-    background: #247bb4;
+  // 折叠状态
+  &.el-menu--collapse {
+    width: 60px;
+    h1 {
+      display: none;
+    }
   }
 }
 </style>

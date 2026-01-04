@@ -3,7 +3,7 @@
  * @Date: 2024-11-13 9:02:55
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-08-21 15:43:31
- * @FilePath: \project\src\views\pcba\common\left.vue
+ * @FilePath: \vue3\src\views\pcba\common\left.vue
  * @Description: left
  *
  * Copyright (c) 2025 by wongtaisin1024@gmail.com, All Rights Reserved.
@@ -82,12 +82,13 @@ const item = ref([
       white-space: pre-wrap;
     }
   }
+}
 
-  :deep(.el-anchor.el-anchor--vertical .el-anchor__list) {
+:deep(.el-anchor.el-anchor--vertical) {
+  .el-anchor__list {
     padding-left: 0;
   }
-
-  :deep(.el-anchor.el-anchor--vertical .el-anchor__marker) {
+  .el-anchor__marker {
     width: 0;
   }
 }

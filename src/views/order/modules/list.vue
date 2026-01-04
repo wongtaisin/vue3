@@ -2,8 +2,8 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2024-11-15 13:46:29
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2025-08-29 13:43:37
- * @FilePath: \project\src\views\order\modules\list.vue
+ * @LastEditTime: 2026-01-04 16:34:10
+ * @FilePath: \vue3\src\views\order\modules\list.vue
  * @Description: 订单列表页面
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.
@@ -191,6 +191,12 @@ const handleOrderDetail = (order: any) => {
 
 // 确认下单
 const handleOrderConfirm = async (order: any) => {
+  // TODO: 调用确认下单接口
+  const res = {
+    orderNo: order.orderNo,
+    orderStatus: 1
+  }
+  console.log(res)
   ElMessage.success('下单成功')
   orderListLoad()
 }

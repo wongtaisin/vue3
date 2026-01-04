@@ -3,7 +3,7 @@
  * @Date: 2024-11-23 08:45:10
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2024-12-16 15:17:40
- * @FilePath: \project\src\utils\jsencrypt.ts
+ * @FilePath: \vue3\src\utils\jsencrypt.ts
  * @Description:
  *
  * Copyright (c) 2024 by wongtaisin1024@gmail.com, All Rights Reserved.

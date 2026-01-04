@@ -63,12 +63,14 @@ const handleClick = (tab: any) => {
       white-space: pre-wrap;
     }
   }
+}
 
-  :deep(.el-anchor.el-anchor--vertical .el-anchor__list) {
+:deep(.el-anchor.el-anchor--vertical) {
+  .el-anchor__list {
     padding-left: 0;
   }
 
-  :deep(.el-anchor.el-anchor--vertical .el-anchor__marker) {
+  .el-anchor__marker {
     width: 0;
   }
 }

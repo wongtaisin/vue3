@@ -3,7 +3,7 @@
  * @Date: 2025-07-18 09:54:15
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2025-07-18 11:01:52
- * @FilePath: \project\src\router\modules\order.ts
+ * @FilePath: \vue3\src\router\modules\order.ts
  * @Description:
  *
  * Copyright (c) 2025 by wongtaisin1024@gmail.com, All Rights Reserved.

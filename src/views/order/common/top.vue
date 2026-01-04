@@ -2,7 +2,7 @@
  * @Author: wingddd wongtaisin1024@gmial.com
  * @Date: 2024-11-15 13:46:29
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2026-01-03 16:52:35
+ * @LastEditTime: 2026-01-04 16:15:26
  * @FilePath: \vue3\src\views\order\common\top.vue
  * @Description:
  *
@@ -46,8 +46,9 @@
       font-weight: 700;
     }
   }
-  :deep(.el-menu--horizontal.el-menu) {
-    border-bottom: 0;
-  }
+}
+
+:deep(.el-menu--horizontal.el-menu) {
+  border-bottom: 0;
 }
 </style>

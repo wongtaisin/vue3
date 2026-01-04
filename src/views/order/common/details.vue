@@ -154,7 +154,7 @@ const dialogVisible = ref(false)
 const auditDetails = ref<any>({})
 
 // 打开详情弹窗
-const opens = (order: any) => {
+const opens = () => {
   dialogVisible.value = true
   auditDetails.value = {
     fileList: [
@@ -190,11 +190,11 @@ defineExpose({ dialogVisible, opens })
 </script>
 
 <style lang="scss" scoped>
-:deep(.my-label) {
+.my-label {
   width: 120px;
 }
 
-:deep(.my-content) {
+.my-content {
   width: 308px;
 }
 
